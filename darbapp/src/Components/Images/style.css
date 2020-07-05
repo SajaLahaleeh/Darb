@@ -1,0 +1,138 @@
+.container-images {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1%;
+  flex-wrap: wrap;
+}
+.container__image1 {
+  margin: 0;
+  height: 38vh;
+  width: 600px;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.container__image2 {
+  margin: 0;
+  height: 38vh;
+  width: 600px;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__image1-img1 {
+  height: 100%;
+  width: 100%;
+}
+
+.container__image1-img2 {
+  height: 100%;
+  width: 100%;
+}
+
+.container__image1-title1 {
+  position: relative;
+  text-align: center;
+  margin-top: -188px;
+  color: #fff;
+}
+
+.container__image1-title2 {
+  text-align: center;
+  margin-top: -188px;
+  margin-left: 15%;
+  width: 70%;
+  color: #fff;
+}
+
+.container__image1-description1 {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 476px;
+  width: 100%;
+}
+
+.container__image1-description2 {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 476px;
+  width: 100%;
+  margin-bottom: 3%;
+  margin-top: -2%;
+}
+
+.container__image1-button {
+  border-radius: 5px;
+  background: #f05561;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  width: 40%;
+  height: 17%;
+  margin-left: 33%;
+  color: #fff;
+  display: inline-block;
+  padding: 1%;
+  margin-top: 5%;
+}
+
+.container__image1-button2 {
+  border-radius: 5px;
+  background: #f05561;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  width: 40%;
+  height: 17%;
+  margin-left: 33%;
+  color: #fff;
+  display: inline-block;
+  padding: 1%;
+  margin-top: 2%;
+}
+
+@media (max-width: 1250px) {
+  .container-images {
+    margin-top: 16%;
+  }
+  .container__image1 {
+    height: 266px;
+    width: 500px;
+  }
+  .container__image2 {
+    height: 266px;
+    width: 500px;
+  }
+  .container-images {
+    padding-bottom: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

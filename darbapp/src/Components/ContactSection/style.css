@@ -1,0 +1,39 @@
+.contact-section-container{
+  width:100%;
+  display:flex;
+  justify-content: space-evenly;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top:53px;
+  margin-bottom: 2%;
+  height: 20%;
+}
+.contact-section-container-phone{
+  width: 191px;
+  display: flex;
+  margin: 0px;
+} 
+.contact-section-container-phone-image{
+    margin: 10px;
+    margin-bottom: 26%;
+}
+.contact-section-container-mail{
+  width: 281px;
+  display: flex;
+    
+}
+
+.contact-section-container-mail-image{
+  margin-right: 6%;
+  margin-bottom: 14%;
+}
+.contact-section-container-whatsapp{
+    width: 265px;
+    display: flex;
+}
+.contact-section-container-whatsapp-image{
+   width: 40px;
+   height: 40px;
+   margin-top: 3px;
+   margin-right: 17px;
+}

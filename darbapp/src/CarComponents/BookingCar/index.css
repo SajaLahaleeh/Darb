@@ -1,0 +1,216 @@
+.booking-car-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  flex-wrap: wrap;
+  margin: 0 0 0 0;
+}
+.booking-car-Firstpart {
+  display: flex;
+  flex-direction: column;
+  margin: 8% 0 0 5%;
+  width: 48%;
+}
+.booking-car-intro {
+  margin: 8% 0 2% 0;
+}
+.booking-car-GustDetail {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  width: 85%;
+}
+.booking-car-title {
+  margin: 8% 0 3% 6%;
+}
+.booking-car-RadioButtonGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 10%;
+}
+.booking-car-first-last-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  width: 83%;
+}
+
+.booking-car-f-l-name,
+.booking-car-email-address {
+  width: 92%;
+  height: 40px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 2%;
+}
+
+.booking-car-email-address {
+  width: 88%;
+  align-self: center;
+  margin: 5% 0 0 2%;
+}
+
+.email-valid-s {
+  display: flex;
+  flex-direction: column;
+}
+.phone-div {
+  width: 45%;
+}
+
+.PhoneInputCountrySelect {
+  width: 65%;
+  margin: 3.5% 0 0 20%;
+}
+.PhoneInputCountryIcon {
+  width: 11%;
+  margin: -8% 0 0 5%;
+}
+.PhoneInputCountryIconImg {
+  border: 1px solid;
+}
+.content-detals-s {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 92%;
+  height: 70px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 2% 0 2% 4%;
+}
+.booking-car-btn-booking-now {
+  width: 30%;
+  height: 40px;
+  background: #fdd467;
+  border-radius: 5px;
+  align-self: center;
+  margin: 0 6% 2% 0;
+}
+.booking-car-secound-part {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 8% 0 0 0;
+  width: 47%;
+}
+.booking-car-booking-summary {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 0 0 10% 0;
+  width: 75%;
+}
+.requer-text {
+  color: red;
+  width: 100%;
+  font-size: 10px;
+}
+
+.vaild-email-text {
+  color: red;
+  font-size: 10px;
+  margin: 0 0 0 8%;
+}
+
+.booking-car-section-one {
+  display: flex;
+  flex-direction: row;
+}
+.booking-car-car-booking-img {
+  width: 37%;
+  height: 150px;
+  border-radius: 10px;
+  margin: 2% 0 0 2%;
+}
+.booking-car-car-name-star-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 2%;
+}
+
+.booking-car-section-two {
+  padding: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+.booking-car-icon-words {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em 0em;
+}
+
+.booking-car-calender {
+  width: 5%;
+}
+.booking-car-contact {
+  width: 5%;
+}
+.booking-car-word {
+  margin: 1% 0 0 2%;
+}
+
+.booking-car-bed-summary {
+  width: 5%;
+}
+
+.booking-car-section-three {
+  /* margin: 0 0 0 2%; */
+}
+.booking-car-form-booking {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+.all-content-car {
+  display: flex;
+  flex-direction: row;
+  width: 92%;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 2% 0 2% 4%;
+  padding: 2% 0 2% 2%;
+}
+.bearth-of-date {
+  width: 88%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  align-self: center;
+  margin: 0 0 0 -10%;
+}
+.input-bod-s {
+  display: flex;
+  flex-direction: row;
+  width: 92%;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 2% 0 2% 4%;
+  justify-content: space-between;
+  padding: 2% 0 0 2%;
+}
+
+@media (max-width: 700px) {
+  .booking-car-section-one {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: column;
+  }
+  .booking-car-car-booking-img {
+    width: 100%;
+    height: 247px;
+  }
+  .booking-car-booking-summary {
+    font-size: 14px;
+  }
+}

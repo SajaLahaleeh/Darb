@@ -1,0 +1,14 @@
+.images-contener {
+  margin-top: 6.8%;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+.image-room {
+  width: 20%;
+  height: 20vh;
+}
+@media (max-width: 1000px) {
+  .image-room {
+    width: 33.33%;
+  }
+}

@@ -1,0 +1,17 @@
+.banner {
+  position: relative;
+  margin-top: 7vh !important;
+}
+
+.landing-page-search-bar{
+  position: absolute;
+    bottom: 78px;
+    width: 100%;
+}
+
+.contact-footer-line-d{
+  margin-top: 5%;
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}

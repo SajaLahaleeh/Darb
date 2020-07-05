@@ -1,0 +1,123 @@
+.policy-item {
+  display: none;
+  margin: -1% 0 0 1%;
+}
+/* .policy-item2{
+  display:none
+} */
+.car-image-d {
+  /* height: 40%; */
+  width: 300px;
+  max-width: 60%;
+}
+.car-details-d {
+  margin-top: 8%;
+  width: 75%;
+  margin-left: 14%;
+}
+.car-details-image-d {
+  /* margin-top: 1%; */
+  display: flex;
+  /* border: 1px solid black;   */
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin-bottom: 3%;
+  padding-left: 5%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.location-img-d {
+  width: 25px;
+  height: 25px;
+}
+.location-icon-title-d {
+  display: flex;
+  padding: auto;
+  margin-bottom: 7%;
+}
+.details-car-inf-d {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 11px;
+}
+.car-image-name-d {
+  width: 53%;
+}
+.name-of-car-d {
+  font-size: 18px;
+  color: #f05561;
+  text-transform: uppercase;
+}
+
+.price-car-d {
+  font-weight: bold;
+  font-size: 18px;
+}
+.cancellation_policies-d {
+  background-color: aquamarine;
+}
+.cancellation-poilices-container-d {
+  background-color: cadetblue;
+}
+.cancellation-poilices-container-secton-d {
+  margin-bottom: 2%;
+  text-align: justify;
+}
+.list-item-d {
+  list-style: none;
+}
+.list-item-tite-button-d {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0 0 1%;
+}
+.button-details-d {
+  /* color: cadetblue ; */
+  background-color: cadetblue;
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  margin: 0 2% 1% 0;
+}
+.car-booking-d {
+  text-decoration: none;
+}
+.car-bookin-p-d {
+  padding: 2%;
+  margin-top: 3%;
+  border: 1px solid;
+  color: white;
+  width: 20%;
+  text-decoration: none;
+  margin-left: 40%;
+  margin-bottom: 8%;
+  text-align: center;
+  border-radius: 14px;
+  background-color: #f05561;
+}
+.loading-car-detail {
+  margin: auto;
+  width: 70%;
+  margin-top: 20vh;
+  height: 30vh;
+  margin-bottom: 40vh;
+}
+
+.big-contener-car-details {
+  display: flex;
+  flex-direction: column;
+}
+.vendor-div-d {
+  display: flex;
+}
+.vendor-image-d {
+  width: 35%;
+  height: 4vh;
+}
+
+.estimate-section {
+  margin: 3% 0 0 0;
+}

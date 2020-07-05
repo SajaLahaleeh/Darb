@@ -1,0 +1,102 @@
+.loading-rooms-search {
+  width: 100%;
+  height: 20vh;
+  margin-top: 10%;
+}
+.tap:hover {
+  background-color: #eee;
+}
+.tap-activ {
+  background-color: #eee;
+}
+.hotel-info-room-s {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #8c8c8c;
+  height: 35px;
+}
+.slider-rooms-images {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background: #ccccccaa;
+  top: 11%;
+}
+.img-hotel-slider {
+  width: 74%;
+  height: 354px;
+  margin: 10% 0 0 0;
+}
+.slider-rooms-images button {
+  width: 50%;
+  background: unset;
+  border: 0;
+  font-size: 65px;
+}
+.x-button-slider {
+  width: auto !important;
+  font-size: 2em !important;
+  position: absolute;
+  left: 24px;
+  top: 50px;
+}
+.btn-img-map-s {
+  width: 65%;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  margin: 2% 0 0 18%;
+}
+.map-section-s {
+  width: 80%;
+  margin: 5% 10% 5% 10%;
+  border-radius: 7px;
+}
+
+.facilities-map-d {
+  width: 65%;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  margin: 2% 0 0 18%;
+}
+.ul-map-d {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2% 0 0 3%;
+  padding: 0 0 1% 0;
+}
+.li-map-d {
+  width: 50%;
+  list-style: none;
+  padding: 0 0 1% 0;
+}
+
+.room-div-s {
+  width: 65%;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  margin: 2% 0 0 18%;
+}
+
+.link-section {
+  display: flex;
+  margin: 9% 0 0 0;
+  text-decoration: none;
+  color: white;
+}
+.amenities-text {
+  margin: 2% 0 0 3%;
+}

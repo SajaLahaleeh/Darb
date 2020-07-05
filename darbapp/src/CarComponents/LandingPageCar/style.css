@@ -1,0 +1,258 @@
+.main-container-search-bar-s {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar-container-s {
+  width: 35%;
+  z-index: 10;
+}
+.aaa {
+  top: 80px !important;
+}
+.search-form-s {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 144px;
+  opacity: 0.86;
+  color: black;
+  background: black;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 405px;
+}
+.checkbox-label {
+  width: 30%;
+  margin: 4.2% 0 0 1%;
+}
+.time-date-car-d {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.input-search-s {
+  width: 36%;
+  height: 43px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: white;
+  margin: 1.5% 0 0 2%;
+  padding: 0 0 0 1.5%;
+}
+.location-label {
+  color: white;
+  font-size: 20px;
+  margin: 2% 0 0 0;
+}
+.first-section-s {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 92%;
+}
+.input-felds-s {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 68%;
+}
+.pickup-date-time-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 17%;
+  height: 41px;
+  margin: 1% 0 0 0;
+}
+.checkbox-place-s {
+  color: #fff;
+}
+.border-select-d {
+  border-radius: 20%;
+  width: 77%;
+  height: 29px;
+  min-width: 37px;
+}
+.return-date-time-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 52%;
+  height: 39px;
+  margin: 1.5% -15% 0 0;
+}
+.checkBtnReturnPlace {
+  color: white;
+}
+.return-place-d {
+  height: 25px;
+  width: 100%;
+  margin-top: 1%;
+  border-radius: 8px;
+}
+.container-checkbox-return-place-d {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  margin-top: 1.5%;
+}
+.date-time-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.h-and-m-s {
+  margin: 5% 0 0 8%;
+  padding: 0 14% 0 0;
+}
+
+.date {
+  width: 45%;
+  height: 43px;
+  border-radius: 8px;
+}
+
+.timer {
+  width: 45%;
+  height: 43px;
+  border-radius: 8px;
+}
+
+.find-car {
+  background-color: #f05561;
+  border: 1px solid #f05561;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  font-weight: bolder;
+  width: 13%;
+  height: 43px;
+  margin: 1.5% 0 0 0;
+}
+
+.calender-img {
+  width: 6%;
+  margin: -1% 0 0 -14%;
+}
+.calender-data {
+  width: 30%;
+}
+
+.clock-enter {
+  background: white;
+  border-radius: 8px;
+  width: 60%;
+  height: 43px;
+}
+
+.age-input {
+  width: 73%;
+  height: 30px;
+  border-radius: 8px;
+  margin: 23% 0 0 0;
+}
+.age-s {
+  margin: 32% 0 0 8%;
+  padding: 0 8% 0 0;
+}
+
+.age-input-s {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  width: 7%;
+}
+.date-button {
+  width: 20%;
+  background-image: url(../../assets/from.svg);
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
+  /* background-size: 100% 100%; */
+  border-radius: 9px;
+  width: 20%;
+}
+
+.hr-ms-d {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  width: 42%;
+}
+.hr-ms-div-d {
+  display: flex;
+  justify-content: space-around;
+  width: 32%;
+}
+
+.DayPicker-Months {
+  z-index: 11;
+  flex-wrap: unset !important;
+  background-color: white;
+  opacity: 1;
+}
+/* .DayPicker-wrapper {
+  padding: 0 !important;
+  position: relative;
+  top: 38%;
+  left: 59%;
+} */
+.DayPicker-wrapper {
+  margin: 3% 0 0 -33%;
+  position: absolute;
+  z-index: 2;
+}
+
+.react-time-picker__button {
+  display: none !important;
+}
+.react-time-picker__clock {
+  display: none !important;
+}
+.react-time-picker {
+  padding: 10px;
+  width: fit-content;
+}
+
+.react-time-picker__wrapper {
+  border: 0px;
+}
+
+.countries-list-s {
+  position: absolute;
+  background: #fff;
+  overflow-y: auto;
+  max-height: 150px;
+  left: 4%;
+  margin: 65px 0 0 0;
+  border-radius: 4px;
+}
+
+.countries-item-s {
+  padding: 1%;
+}
+.countries-list-return-d {
+  position: absolute;
+  background: #fff;
+  overflow-y: auto;
+  max-height: 150px;
+  left: -2%;
+  margin: 65px 0 0 0;
+  border-radius: 4px;
+  margin-left: 60%;
+  margin-top: 1%;
+}
+
+.countries-list-s2 {
+  position: absolute;
+  background: #fff;
+  overflow-y: auto;
+  max-height: 150px;
+  margin: 65px 0 0 -25.5%;
+  border-radius: 4px;
+  left: 70%;
+}
+.to-date-sa {
+  color: #fff;
+}

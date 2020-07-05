@@ -1,0 +1,28 @@
+.car-container-s {
+  z-index: 0;
+}
+
+.car-background-s {
+  width: 100%;
+  z-index: 0;
+  height: 495px;
+  margin: 54px 0 0 0;
+}
+
+.text-container-s {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Open Sans;
+  top: 17%;
+  left: 8%;
+}
+
+.text-s {
+  font-size: 34px;
+  margin: 13% 0% 0 0%;
+}

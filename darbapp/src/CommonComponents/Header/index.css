@@ -1,0 +1,302 @@
+.NavBar {
+  background: #f05561;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0px;
+  height: 7vh;
+}
+.NavBarLogoWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 12%;
+}
+
+.NavBarLogo {
+  width: 100%;
+  margin: 5% 0 0 15%;
+}
+.NavBarLogo0 {
+  width: 10%;
+}
+
+.NavBarPartOne {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 28%;
+  width: fit-content;
+  margin: auto;
+}
+.menu-img {
+  width: 6%;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.NavBarPartTow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 0 0 0 auto;
+  width: fit-content;
+}
+
+.eachlogo {
+  display: flex;
+  align-items: center;
+}
+
+.eachlogo > .Text {
+  padding-left: 5px;
+}
+/* temp delete it */
+.eachlogo > h6:hover {
+  background-color: #000;
+}
+
+.bedlogo {
+  width: 18px;
+}
+
+.CarLogo {
+  width: 26px;
+}
+
+.FlightLogo,
+.FootballLogo {
+  width: 15px;
+}
+
+.Text {
+  color: white;
+  font-family: Open Sans;
+  font-size: 13px;
+  text-decoration: blink;
+}
+
+.selector {
+  width: 100px;
+  font-size: 13px;
+}
+.menu-img {
+  display: none;
+}
+.nav1,
+.nav2 {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  width: 370px;
+  background-color: #f05561;
+  display: none;
+}
+.nav1 .list1,
+.nav2 .list2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav1 .list-item-1,
+.nav2 .list-item-2 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 5px;
+}
+.nav1 .item,
+.nav2 .item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.nav1 a:hover,
+.nav2 a:hover {
+  color: black;
+}
+
+.nav-toggle:checked ~ .nav1 {
+  display: block;
+}
+.nav-toggle2:checked ~ .nav2 {
+  display: block;
+}
+.curncy-lang {
+  color: white;
+  margin-left: 15px;
+}
+.nav-toggle2,
+.nav-toggle {
+  color: #f05561;
+  width: 15px;
+  visibility: hidden;
+}
+.arrow-down {
+  height: 20px;
+  position: absolute;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 320px) {
+  .NavBar {
+    height: 60px;
+  }
+
+  .NavBarLogo {
+    width: 52%;
+    margin: 2% 0 0 11%;
+  }
+
+  .NavBarPartOne,
+  .NavBarPartTow,
+  .eachlogo,
+  .bedlogo,
+  .CarLogo .FlightLogo,
+  .FootballLogo,
+  .Text {
+    display: none;
+  }
+
+  .menu-img {
+    display: flex;
+    width: 6%;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 321px) and (max-width: 500px) {
+  .NavBar {
+    height: 55px;
+  }
+
+  .NavBarLogo {
+    width: 53%;
+    margin: 1% 0 0 18%;
+  }
+  .menu-img {
+    display: flex;
+    width: 6%;
+    margin: 0 0 0 28%;
+  }
+  .NavBarPartOne,
+  .NavBarPartTow,
+  .eachlogo,
+  .bedlogo,
+  .CarLogo .FlightLogo,
+  .FootballLogo,
+  .Text {
+    display: none;
+  }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 501px) and (max-width: 767px) {
+  .NavBar {
+    height: 55px;
+  }
+
+  .NavBarLogo {
+    width: 50%;
+    margin: 2% 0 0 16%;
+  }
+  .menu-img {
+    display: flex;
+    width: 5%;
+    margin: 0 0 0 45%;
+  }
+  .NavBarPartOne,
+  .NavBarPartTow,
+  .eachlogo,
+  .bedlogo,
+  .CarLogo .FlightLogo,
+  .FootballLogo,
+  .Text {
+    display: none;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .NavBar {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+  }
+
+  .NavBarLogo {
+    width: 49%;
+    margin: 2% 0 0 10%;
+  }
+  .NavBarPartOne {
+    width: 37%;
+    margin: 0% 0 0 -10%;
+  }
+  .NavBarPartTow {
+    width: 40%;
+    margin: 0 0 0 9%;
+  }
+  .arrow-down {
+    height: 11px;
+    margin: 0.6% 0 0 0.5%;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .NavBar {
+    height: 65px;
+  }
+
+  .NavBarLogo {
+    width: 55%;
+    margin: 3% 0 0 12%;
+  }
+  .NavBarPartOne {
+    width: 27%;
+    margin: 0% 0 0 -5%;
+  }
+  .NavBarPartTow {
+    width: 34%;
+    margin: 0 3% 0 auto;
+  }
+  .arrow-down {
+    height: 14px;
+    margin: 0.19% 0 0 0.5%;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  .NavBar {
+    height: 85px;
+  }
+  .NavBarLogo {
+    width: 70%;
+  }
+  .NavBarPartOne {
+    width: 33%;
+    margin: 1% 0 0 -2%;
+  }
+  .NavBarPartTow {
+    width: 35%;
+    margin: 1% 0 0 17%;
+  }
+  .Text {
+    font-size: 21px;
+    text-decoration: none;
+  }
+  .arrow-down {
+    height: 14px;
+    margin: 0.19% 0 0 0.5%;
+  }
+  .curncy-t {
+    font-size: 18px;
+  }
+  .language-t {
+    font-size: 17px;
+  }
+}

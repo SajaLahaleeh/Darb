@@ -1,0 +1,70 @@
+.top-hotels-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -3% 0 0 0;
+
+  width: 100%;
+  font-family: Open Sans, Noto Naskh;
+  padding-top: 16px;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+.top-hotels-container-destination {
+  background-color: #fff;
+  width: 30%;
+  border: 0;
+  font-size: 117%;
+  cursor: pointer;
+  position: relative;
+}
+.top-hotels-container-destination:hover {
+  background-color: #dadada;
+}
+
+.top-hotels-container-destination:after {
+  display: block;
+  background-color: white;
+}
+
+.top-hotels-list {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  flex-wrap: wrap;
+  margin: 0 0 0 5%;
+}
+
+.top-hotels-items {
+  font-size: 15px;
+  width: 32%;
+}
+
+.hr-line-top-d {
+  border: 0;
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8c8c;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+.hr-line-top-d:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8c8c;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+@media (max-width: 780px) {
+  .top-hotels-items {
+    font-size: 10px;
+  }
+}

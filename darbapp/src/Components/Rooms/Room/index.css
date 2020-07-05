@@ -1,0 +1,65 @@
+.rooms-contener {
+  padding: 0 2%;
+  margin: 2% 0 0 19%;
+  width: 65%;
+  border: solid 1px;
+}
+.room-contener {
+  display: flex;
+}
+.preson-img-s {
+  width: 10%;
+  margin: 2% 0 0 5%;
+}
+.left-side-room {
+  width: 22%;
+}
+.image-room-left-side {
+  width: 100%;
+  margin: 6% 0 0 0;
+  border-radius: 5px;
+}
+.right-side-room {
+  /* display: flex; */
+  width: 65%;
+  padding: 0 2%;
+  margin: auto;
+}
+.right-side-room-row1 {
+  justify-content: space-around;
+  display: flex;
+}
+.right-side-room-row2 {
+  border: solid 1px;
+  display: flex;
+}
+.book-now-button {
+  padding: 2%;
+  border-radius: 5px;
+  background-color: #fdd467;
+}
+.col {
+  width: 33%;
+  padding: 4px;
+}
+@media (max-width: 500px) {
+  .right-side-room {
+    width: 65%;
+    padding: 0 2%;
+    margin: auto;
+  }
+  .right-side-room-row2 {
+    font-size: 12px;
+  }
+  .image-room-left-side {
+    margin-top: 26%;
+    width: 100%;
+    height: 11vh;
+  }
+}
+/* .col1 {
+  width: 25%;
+}
+.col1 {
+  width: 25%;
+} */

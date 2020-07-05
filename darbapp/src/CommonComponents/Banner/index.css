@@ -1,0 +1,114 @@
+.MainConteaner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.ImgConteaner {
+  z-index: 0;
+}
+.BannerImg {
+  width: 100%;
+  z-index: 0;
+}
+
+.titel {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Open Sans;
+  top: 27%;
+}
+.HeaderOne {
+  font-size: 36px;
+  padding: 0 0 0 2%;
+}
+.HeaderFour {
+  font-size: 22px;
+  margin: -1% 0 0 0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 320px) {
+  .titel {
+    width: 80%;
+    top: 24%;
+  }
+  .HeaderOne {
+    font-size: 16px;
+    padding: 0 0 0 2%;
+    color: #ffffff;
+  }
+  .HeaderFour {
+    font-size: 11px;
+    margin: -3% 0 0 0;
+  }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 321px) and (max-width: 767px) {
+  .titel {
+    width: 80%;
+    top: 34%;
+  }
+  .HeaderOne {
+    font-size: 18px;
+    padding: 0 0 0 2%;
+    color: #ffffff;
+  }
+  .HeaderFour {
+    font-size: 11px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .titel {
+    width: 80%;
+    top: 43%;
+  }
+  .HeaderOne {
+    font-size: 30px;
+    padding: 0 0 0 2%;
+    color: #ffffff;
+  }
+  .HeaderFour {
+    font-size: 19px;
+    margin: 0% 0 0 1%;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .titel {
+    width: 80%;
+    top: 38%;
+  }
+  .HeaderOne {
+    font-size: 30px;
+    padding: 0 0 0 2%;
+    color: #ffffff;
+  }
+  .HeaderFour {
+    font-size: 19px;
+    margin: 0% 0 0 1%;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  .titel {
+    width: 80%;
+    top: 37%;
+  }
+  .HeaderFour {
+    font-size: 22px;
+    margin: 0% 0 0 1%;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Darb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "heroku-postbuild": "cd darbapp && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SajaLahaleeh/Darb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SajaLahaleeh/Darb/issues"
+  },
+  "homepage": "https://github.com/SajaLahaleeh/Darb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

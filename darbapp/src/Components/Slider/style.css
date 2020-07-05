@@ -1,0 +1,27 @@
+.slider-container {
+  margin-top: 2%;
+}
+.slider-container-title {
+  margin-top: 4%;
+  margin-left: 2%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.slider-container-description {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #777777;
+  margin-left: 2%;
+}
+.MuiPaper-root-4,
+MuiPaper-elevation1-7,
+MuiPaper-rounded-5,
+MuiCard-root-3,
+card-item {
+  padding-bottom: 15px;
+}

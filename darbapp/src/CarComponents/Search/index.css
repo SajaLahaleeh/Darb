@@ -1,0 +1,39 @@
+.car-search-modefy-search-button {
+  margin-left: auto;
+  background-color: #7dd0cf;
+  padding: 6px 13px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.car-search-modefy-search {
+  padding: 15px 0px;
+  width: 80%;
+  margin-left: auto;
+  display: flex;
+  border: solid 1px;
+  margin-right: 20px;
+}
+
+.car-search-summary-span {
+  align-self: center;
+  margin-left: 5px;
+}
+.car-search-cars-contener {
+  margin: 0 0 0 32%;
+  width: 59%;
+}
+.car-search-page-filter-container {
+  flex-wrap: wrap;
+  margin-top: 20%;
+}
+@media (max-width: 1150px) {
+  .car-search-cars-contener {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.loading-cars-search {
+  width: 98%;
+  height: 30vh;
+}

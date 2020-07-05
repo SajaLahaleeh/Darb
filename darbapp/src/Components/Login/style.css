@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+.login-form-container {
+  margin-top: 5%;
+  height: 100%;
+  width: 50%;
+  margin-left: 2%;
+}
+.login-image-container {
+  width: 40%;
+  height: 100%;
+}
+.login-page-container {
+  display: flex;
+  align-items: center;
+}
+.login-form {
+  display: flex;
+  height: 40%;
+  width: 80%;
+  margin-left: 10%;
+  flex-direction: column;
+}
+.login-title {
+  text-align: center;
+}
+.input1 {
+  position: relative;
+  width: 48%;
+  padding: 1%;
+  left: 26%;
+  margin-top: 5%;
+  border: 1px solid #b6b1b1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.input2 {
+  position: relative;
+  width: 48%;
+  padding: 1%;
+  left: 26%;
+  margin-top: 5%;
+  border: 1px solid #b6b1b1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.login {
+  position: relative;
+  width: 25%;
+  height: 11%;
+  left: 36%;
+  padding: 1%;
+  margin-top: 5%;
+  background: #f18c96;
+  border: 1px solid #b6b1b1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+::placeholder {
+  padding-left: 5%;
+}
+
+.invalidMsg {
+  color: red;
+  text-align: center;
+  margin-top: 3%;
+}
+.email-forget-password {
+  position: relative;
+  width: 48%;
+  padding: 1%;
+  left: 26%;
+  margin-top: 2%;
+  border: 1px solid #b6b1b1;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.forget-title {
+  margin-top: 5%;
+  text-align: center;
+  color: grey;
+}
+.send-email {
+  position: relative;
+  width: 26%;
+  height: 11%;
+  left: 36%;
+  padding: 1%;
+  margin-top: 5%;
+  background: #e8cdb8;
+  border: 1px solid #b6b1b1;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.dont-have-account {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.move-to-sign-up {
+  color: blue;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.login-image {
+  margin-top: 5%;
+  width: 43%;
+  margin-right: 10%;
+  height: 447px;
+}
+@media (max-width: 1250px) {
+}

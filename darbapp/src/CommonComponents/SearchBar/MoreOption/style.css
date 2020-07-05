@@ -1,0 +1,18 @@
+.more-option {
+  background: #fff;
+  margin: 0 0 0 52%;
+  border: solid 1px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 27%;
+}
+.row1-more-option {
+  display: flex;
+}
+.row2-more-option {
+  padding: 10px 0;
+}
+.select-more-option {
+  background-color: #fff;
+  border: 0px;
+}

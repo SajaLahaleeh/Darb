@@ -1,0 +1,85 @@
+.car-search-car-contener {
+  display: flex;
+  border: solid 1px #c4c4c4;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 7px;
+  flex-wrap: wrap;
+}
+.car-search-car-img {
+  margin-right: 5px;
+  width: 20%;
+  height: 106px;
+  border-radius: 5px;
+}
+.img-span-contener {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+}
+.car-search-type {
+  background-color: #c4c4c4;
+  padding: 3px;
+  border-radius: 5px;
+}
+.car-search-flex {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.car-search-h3 {
+  width: 100%;
+  margin: -3% 0 0 0;
+}
+.car-search-labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 86%;
+  margin: 3% 0 0 0;
+}
+.car-search-span {
+  color: #84cc6b;
+  border: solid 1px #84cc6b;
+  width: 99%;
+  height: 22px;
+  padding: 1%;
+  border-radius: 5px;
+  margin: 7% 0 0 8%;
+  font-size: 12px;
+}
+
+.car-search-center-side-car {
+  width: 56%;
+}
+.car-search-see-rooms-button {
+  color: white;
+  background-color: #fdd467;
+  padding: 7px 25px;
+  border-radius: 5px;
+  margin: 4% 0 0 0;
+}
+.car-search-line-filter {
+  margin: 0 0 0 -4%;
+}
+.btn-and-price {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  margin: 2% 0 0 3%;
+}
+
+@media (max-width: 1150px) {
+  .car-search-car-contener {
+    margin-right: 0px;
+  }
+  .car-search-center-side-car {
+    width: 78%;
+  }
+}
+.car-search-img-span {
+  width: 20px;
+  margin: 5% -1% 0 2%;
+  height: 24px;
+}
