@@ -7,6 +7,8 @@ import contact from "../../assets/contact.svg";
 import calender from "../../assets/from.svg";
 import bed from "../../assets/bedS.svg";
 import "./index.css";
+import { randomBytes } from "crypto";
+import sha256 from "crypto-js/sha256";
 
 class BookingHotel extends Component {
   state = {
@@ -27,6 +29,8 @@ class BookingHotel extends Component {
     wrongEmail: true,
     wrongGender: [],
     wrongValue: true,
+    iframe: false,
+    once: 0,
   };
   componentDidMount() {
     const rooms = localStorage.getItem("searchBar")
@@ -39,7 +43,75 @@ class BookingHotel extends Component {
       lastName: rooms.map((gender, i) => ""),
     });
   }
+  iFrame0 = () => {
+    if (this.state.once) return;
+    const merchantReference = randomBytes(10).toString("hex");
+    const signature = sha256(
+      "TEST" +
+        `access_code=0UPmtDIoqFt2POsY7vSRamount=1000currency=JODlanguage=enmerchant_extra=${this.state.booking_info}merchant_identifier=BbefLryEmerchant_reference=${merchantReference}return_url=http://localhost:3000/404service_command=TOKENIZATION` +
+        "TEST"
+    ).toString();
+    this.setState({ once: 1, signature, merchantReference }, () => {
+      var ifrm = document.getElementById("i-frame");
+      ifrm =
+        ifrm.contentWindow ||
+        ifrm.contentDocument.document ||
+        ifrm.contentDocument;
+      ifrm.document.open();
+      ifrm.document.write(`<!DOCTYPE html>
+        <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i frame</title>
+  </head>
+  <body>
+    <form
+      method="post"
+      action="https://sbcheckout.payfort.com/FortAPI/paymentPage"
+      id="form1"
+      name="form1"
+    >
+      <input
+        type="hidden"
+        name="signature"
+        value="${this.state.signature}"
+      />
+      <input type="hidden" name="amount" value="1000" />
+      <input type="hidden" name="currency" value="JOD" />
+      <input type="hidden" name="service_command" value="TOKENIZATION" />
+      <input type="hidden" name="merchant_identifier" value="BbefLryE" />
+      <input type="hidden" name="access_code" value="0UPmtDIoqFt2POsY7vSR" />
+      <input type="hidden" name="merchant_reference" value="${this.state.merchantReference}" />
+      <input type="hidden" name="language" value="en" />
+      <input
+        type="hidden"
+        name="merchant_extra"
+        value=${this.state.booking_info}
+      />
+      <input
+        type="hidden"
+        name="return_url"
+        value="http://localhost:3000/404"
+      />
 
+      <input
+        type="submit"
+        value=""
+        id="payClick"
+        name=""
+        style="display: none;"
+      />
+    </form>
+    <script>
+      document.getElementById("payClick").click();
+    </script>
+  </body>
+</html>
+`);
+      ifrm.document.close();
+    });
+  };
   handleRadioButtonChange = ({ target: { value, name } }) => {
     const gender = this.state.gender;
     gender[name] = value;
@@ -60,10 +132,10 @@ class BookingHotel extends Component {
     this.setState(
       {
         wrongName: firstName.map((element) => {
-          return element.length < 3;
+          return element.length < 4;
         }),
         wrongLast: lastName.map((element) => {
-          return element.length < 3;
+          return element.length < 4;
         }),
         wrongEmail: emailAddress.indexOf("@") === -1,
         wrongGender: gender.map((element) => {
@@ -110,6 +182,7 @@ class BookingHotel extends Component {
         wrongValue
       ) {
         this.setState({
+          iframe: false,
           genderError: wrongGender.map((element) => {
             return element ? "*" : null;
           }),
@@ -122,6 +195,8 @@ class BookingHotel extends Component {
           emailAddressError: "Requires valid email",
           valueError: "Please enter your phone number",
         });
+      } else {
+        this.setState({ iframe: true }, this.iFrame0);
       }
     });
   };
@@ -338,6 +413,18 @@ class BookingHotel extends Component {
               </div>
             </div>
           </div>
+          {this.state.iframe ? (
+            <iframe
+              id='i-frame'
+              src=''
+              style={{
+                border: "none",
+                margin: "0 0 0 5%",
+                width: "40%",
+                height: "520px",
+              }}
+            ></iframe>
+          ) : null}
         </div>
         <hr className='contact-footer-line-d'></hr>
         <ContactSection />
